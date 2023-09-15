@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  # app service for your backend
+  app:
+    container_name: Softdev-backend
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      PORT: 4000
+      MONGO_URI: mongodb+srv://Bourbxn:Boss2546@parkeyrew.scikn89.mongodb.net/
+    ports:
+      - '4000:4000'
